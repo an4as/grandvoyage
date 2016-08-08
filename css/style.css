@@ -1,0 +1,650 @@
+/*FONTS */
+@font-face {
+    font-family: 'roboto_condensedbold';
+    src: url('../fonts/robotocondensed-bold-webfont.eot');
+    src: url('../fonts/robotocondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
+         url('../fonts/robotocondensed-bold-webfont.woff') format('woff'),
+         url('../fonts/robotocondensed-bold-webfont.ttf') format('truetype'),
+         url('../fonts/robotocondensed-bold-webfont.svg#roboto_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../fonts/roboto-italic-webfont.eot');
+    src: url('../fonts/roboto-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-italic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-italic-webfont.woff') format('woff'),
+         url('../fonts/roboto-italic-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-italic-webfont.svg#robotoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.eot');
+    src: url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff'),
+         url('../fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium-webfont.eot');
+    src: url('../fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-medium-webfont.woff') format('woff'),
+         url('../fonts/roboto-medium-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*GENERAL RESET START*/
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+body{
+	background: #fff;
+	margin: 0 auto;
+	font: 12px/1 arial, helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active,
+a:visited{
+	text-decoration: none;
+}
+ul, ol{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+img{
+	max-width: 100%;
+	border: none;
+}
+input, button, textarea{
+	border: none;
+	outline: none;
+}
+textarea{
+	resize: vertical;
+}
+input[type="submit"], button{
+	cursor: pointer;
+}
+/*GENERAL RESET END*/
+
+/* GENERAL STYLE START */
+.container{
+	width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+/* BTN DEFAULT STYLE */
+.btn{
+	display: inline-block;
+	background: #db3a34;
+	color: #fff;
+	font-family: 'robotomedium';
+	padding: 12px 15px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.btn:hover{
+	background: #b9322d;
+}
+input.btn{
+	font-size: 21px;
+}
+/*TITLE STYLE*/
+h6{
+	color: #000;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-family: 'robotolight';
+}
+h6 span{
+	font-family: 'roboto_condensedbold';
+}
+/* INPUT STYLE */
+input[type="text"]{
+	background: transparent;
+	border: 2px solid #000;
+	font-family: 'robotoitalic';
+	font-size: 16px;
+	color: #4f4f4f;
+	padding: 0 20px;
+	height: 50px;	
+}
+/* wrong input validate class */
+input.wrong-form{
+	border-color: #db3a34 !important;
+}
+input:focus{
+	border-color: #a0b137;
+}
+/* placeholder style */
+::-webkit-input-placeholder {color:#4f4f4f;}
+::-moz-placeholder          {color:#4f4f4f;}
+:-moz-placeholder           {color:#4f4f4f;}
+:-ms-input-placeholder      {color:#4f4f4f;}
+
+:focus::-webkit-input-placeholder {color: transparent;}
+:focus::-moz-placeholder          {color: transparent;}
+:focus:-moz-placeholder           {color: transparent;}
+:focus:-ms-input-placeholder      {color: transparent;}
+
+/* GENERAL STYLE END */
+
+/* HEADER STYLE START */
+header{
+	height: 85px;
+	background: #a0b137;
+	padding-top: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+.logo{
+	float: left;
+}
+.header-contact{
+	float: right;
+}
+.contact-list li{
+	display: inline-block;
+	font-family: 'robotolight';
+	color: #fff;
+	font-size: 16px;
+}
+.contact-list li:not(:last-child){
+	margin-right: 40px;
+}
+.contact-list li span{
+	vertical-align: middle;
+}
+.contact-list li:before{
+	content: "";
+	display: inline-block;
+	margin-right: 8px;
+	background: url("../img/sprite.png") no-repeat;
+	vertical-align: middle;
+}
+.contact-list li.life:before{
+	background-position: -0px -504px; 
+	width: 30px; 
+	height: 16px;
+}
+.contact-list li.star:before{
+	background-position: -30px -504px; 
+	width: 20px; 
+	height: 20px;
+}
+.contact-list li.mts:before{
+	background-position: -50px -504px;
+	width: 19px; 
+	height: 19px;
+}
+.header-nav{
+	margin-top: 8px;
+}
+.header-nav li{
+	display: inline-block;
+}
+.header-nav li:not(:last-child){
+	margin-right: 35px;
+}
+.header-nav li a{
+	font-family: 'robotomedium';
+	font-size: 15px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.header-nav li a:hover{
+	color: #db3a34;
+}
+/* HEADER STYLE END */
+
+/* MAIN STYLE START */
+
+/* carusel style */
+.carusel-title{
+	position: absolute;
+	bottom: 60%;
+	left: 10.8%;
+	width: 447px;
+}
+.carusel-title h6 + span{
+	font-size: 48px !important;
+	color: #fff !important;
+}
+.carusel-inner .carusel{
+	position: relative;
+}
+.slick-slide img{
+	width: 100%;
+}
+.slick-dots{
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+}
+.slick-dots li{
+	display: inline-block;
+	position: relative;
+	left: -50%;
+}
+.slick-dots li button{
+	color: transparent;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #a0b137;
+	border: 2px solid #fff;
+}
+.slick-dots li + li{
+	margin-left: 22px;
+}
+.slick-dots li.slick-active button{
+	background: #db3a34;
+}
+.timer-wrap{
+	padding: 42px 0;
+	overflow: hidden; 
+	border-bottom: 2px solid #6a5c5a;
+	-webkit-border-image: url('../img/border-line.png') 0 0 2 repeat;
+	-o-border-image: url('../img/border-line.png') 0 0 2 repeat;
+	border-image: url('../img/border-line.png') 0 0 2 repeat;
+}
+.timer-wrap .title{
+	margin-bottom: 7px;
+}
+span.red-star{
+	font-size: 16px;
+	color: #000;
+	font-family: 'robotoregular';
+} 
+span.red-star > span{
+	color: #db3a34;
+	font-size: 30px;
+}
+.discount-timer{
+	float: left;
+}
+.discount-form{
+	float: right;
+	width: 300px;
+}
+.discount-form .title{
+	margin-bottom: 25px;
+}
+.discount-form input{
+	width: 100%;
+}
+.discount-form input[type="text"]{
+	margin-bottom: 17px;
+	border-color: #5b4b49;
+}
+.timer-block{
+	padding: 20px;
+	background: #ebebeb;
+	text-align: center;
+}
+.timer-block > span{
+	font-size: 14px;
+	color: #db3a34;
+	font-family: 'robotomedium';
+	display: inline-block;
+	margin-bottom: 15px;
+}
+/*timer style*/
+.table-cell{
+	display: inline-block;
+	/*margin: 0 27px;*/
+}
+.table-cell.minute .tab-val{
+	border-left: 2px solid #6a5c5a;
+	border-right: 2px solid #6a5c5a;
+	-webkit-border-image: url("../img/timer-border.png") 0 2 0 repeat ;
+	-o-border-image: url("../img/timer-border.png") 0 2 0 repeat ;
+	border-image: url("../img/timer-border.png") 0 2 0 repeat ;
+}
+.tab-val{
+	font-size: 80px;
+	line-height: 63px;
+	color: #4f4f4f;
+	padding: 0 30px;
+	font-family: 'robotobold';
+}
+.tab-unit{
+	font-size: 16px;
+	color: #000;
+	font-family: 'robotoregular';
+}
+.price{
+	padding: 38px 0 24px 0;
+	overflow: hidden;
+}
+.price .title{
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.row{
+	margin: 0 -10px;
+}
+.price-block{
+	width: 50%;
+	height: 182px;
+	float: left;
+	background: #ebebeb;
+	padding: 0 10px;
+	background-clip: content-box;
+	margin-bottom: 35px;
+}
+.direction{
+	width: 320px;
+	height: 50px;
+	background: #a0b137;
+	padding: 13px 20px;
+	float: left;
+}
+.direction span{
+	font-family: 'robotomedium';
+	font-size: 21px;
+	color: #fefefe;
+	display: inline-block;
+	position: relative; 
+}
+.direction span + span{
+	padding-left: 26px;
+}
+.direction span + span:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 8px;
+	left: 2px;
+	top: 50%;
+	margin-top: -4px;
+	background: url('../img/direction-bg.png') no-repeat;
+}
+.price-title{
+	overflow: hidden;
+}
+.total-price{
+	width: 140px;
+	float: right;
+	padding-top: 5px;
+}
+.total-price span{
+	display: inline-block;
+	float: right;
+}
+.total-price span.old-price{
+	font-family: 'robotolight';
+	font-size: 16px;
+	color: #000;
+	text-decoration: line-through;
+	margin-right: 60px;
+}
+.total-price span.new-price{
+	font-family: 'robotomedium';
+	font-size: 24px;
+	color: #db3a34;
+	margin-right: 20px;
+}
+.total-price span.new-price span{
+	font-size: 18px;
+	margin-top: 5px;
+}
+.price-desq{
+	padding: 20px 20px 10px;
+}
+.distance{
+	padding: 10px 0;
+	background: url('../img/distance.png') no-repeat center center;
+	position: relative;
+	overflow: hidden;
+}
+.start-time{
+	float: left;
+}
+.end-time{
+	float: right;
+}
+.start-time, .end-time{
+	font-family: 'robotoregular';
+	font-size: 24px;
+	color: #000;
+}
+.total-distance, .total-time{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 0;
+	font-size: 13px;
+}
+.total-distance{
+	font-family: 'robotobold';
+}
+.total-time{
+	font-family: 'robotoregular';
+	bottom: 0;
+	top: auto;
+}
+.information span{
+	font-size: 14px;
+	font-family: 'robotoregular';
+	width: 226px;
+}
+.information a{
+	float: right;
+}
+.advantage{
+	padding: 40px 0 50px 0;
+	background: url('../img/advantage-bg.jpg') no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+}
+.advantage .title{
+	margin-bottom: 45px;
+}
+.advantage .col{
+	width: 16.6666%;
+	float: left;
+	padding: 100px 10px 0;
+	position: relative;
+	text-align: center;
+}
+.advantage .col span{
+	font-family: 'robotomedium';
+	font-size: 16px;
+	color: #000;
+	text-transform: uppercase;
+}
+.advantage .col:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 84px;
+	height: 84px;
+	top: 0;
+	left: 50%;
+	margin-left: -42px;
+	background: url('../img/sprite.png') no-repeat;
+}
+.advantage .col.comfort:before {
+	background-position: -0px -84px;
+}
+.advantage .col.snack:before {
+	background-position: -0px -168px;
+}
+.advantage .col.insurance:before {
+	background-position: -0px -252px;
+}
+.advantage .col.time:before {
+	background-position: -0px -336px;
+}
+.reviews{
+	margin: 54px 0 20px 0;
+	overflow: hidden;
+}
+.reviews .row{
+	margin-top: 29px;
+}
+.reviews .col{
+	float: left;
+	padding: 0 10px;
+	width: 33.3333%;
+	margin-bottom: 40px;
+}
+.reviews .review-title img{
+	vertical-align: middle;
+	margin-right: 15px;
+}
+.reviews .review-title span{
+	vertical-align: middle;
+	font-size: 18px;
+	color: #000;
+	font-family: 'robotomedium';
+}
+.reviews .review-text{
+	margin-top: 12px;
+}
+.reviews .review-text p{
+	font-size: 16px;
+	color: #000;
+	font-family: 'robotolight';
+} 
+.contact-form{
+	padding: 41px 0 37px 0;
+	background: url(../img/contactform-bg.jpg) no-repeat center;
+	background-size: cover;
+}
+.contact-form .title {
+	text-align: center;
+	margin-bottom: 42px;
+}
+.contact-form .title p{
+	margin-top: 7px;
+	font-family: 'robotoitalic';
+	font-size: 16px;
+	color: #000;
+}
+.contact-form form{
+	width: 680px;
+	margin: 0 auto;
+	text-align: center;
+}
+.contact-form form .input-sm{
+	width: 212px;
+}
+.contact-form form .input-lg{
+	width: 329px;
+}
+.contact-form form input[type="text"] + input[type="text"]{
+	margin: 0 0 30px 18px;
+}
+.contact-form form input[name="name"]{
+	margin: 0 !important;
+} 
+.contact-form form input[type="text"]:first-child{
+	margin-left: -4px;
+}
+/* MAIN STYLE END*/
+
+/* FOOTER STYLE START*/
+.footer .container{
+	margin-top: 25px;
+}
+.rights{
+	float: left;
+}
+.footer .contact-list{
+	float: right;
+	color: #000;
+}
+.footer{
+	height: 84px;
+	background: #fff;
+}
+.social li{
+	display: inline-block;
+	margin: 0 10px;
+}
+.social li a{
+	display: inline-block;
+	height: 34px;
+	width: 34px;
+	background: #a0b137;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 34px;
+	color: #fff;
+	font-size: 18px;
+}
+.social li a:hover{
+	background: #db3a34;
+}
+/* FOOTER STYLE END*/
+
+/*POPUP STYLE START*/
+.popup{
+	display: none;
+	width: 300px;
+	height: 100px;
+	background: #fff;
+	border-radius: 10px;
+}
+/*POPUP STYLE END*/
