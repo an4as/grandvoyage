@@ -536,6 +536,9 @@ span.red-star > span{
 .advantage .col.time:before {
 	background-position: -0px -336px;
 }
+.advantage .col.discount:before {
+	background-position: -0px -420px;
+}
 .reviews{
 	margin: 54px 0 20px 0;
 	overflow: hidden;
@@ -605,19 +608,43 @@ span.red-star > span{
 /* MAIN STYLE END*/
 
 /* FOOTER STYLE START*/
-.footer .container{
-	margin-top: 25px;
+footer{
+	height: 84px;
+	background: #fff;
+	margin-top: 23px;
 }
 .rights{
 	float: left;
+	margin: 5px 80px 0 0;
+	font-family: 'robotoregular';
+	font-size: 13px;
+	color: #4c4c4c;
 }
-.contact-list{
-	float: right;
+.rights p:not(:last-child){
+	margin-bottom: 12px;
+}
+.rights span{
+	text-decoration: underline;
+}
+footer .contact-list{
+	float: left;
+	overflow: hidden;
+}
+footer .contact-list li{
 	color: #000;
 }
-.footer{
-	height: 84px;
-	background: #fff;
+.contacts{
+	float: left;
+	margin-top: 10px;
+}
+.contacts li{
+	display: inline-block;
+	font-family: 'robotomedium';
+	font-size: 13px;
+	margin-right: 34px;
+}
+.social{
+	float: left;
 }
 .social li{
 	display: inline-block;
