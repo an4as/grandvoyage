@@ -259,13 +259,12 @@ header{
 /* carusel style */
 .carusel-title{
 	position: absolute;
-	bottom: 60%;
-	left: 10.8%;
-	width: 447px;
+	top: 113px;
+	width: 460px;
 }
-.carusel-title h6 + span{
-	font-size: 48px !important;
-	color: #fff !important;
+.carusel-title h6 { 
+	font-size: 48px; 
+	color: #fff; 
 }
 .carusel-inner .carusel{
 	position: relative;
@@ -483,10 +482,15 @@ span.red-star > span{
 	bottom: 0;
 	top: auto;
 }
+.information {
+	margin-top: 12px;
+}
 .information span{
 	font-size: 14px;
 	font-family: 'robotoregular';
-	width: 226px;
+	width: 230px;
+    display: inline-block;
+    padding-top: 12px;
 }
 .information a{
 	float: right;
@@ -614,7 +618,8 @@ footer{
 	margin-top: 23px;
 }
 .rights{
-	float: left;
+	display: inline-block;
+	vertical-align: middle;
 	margin: 5px 80px 0 0;
 	font-family: 'robotoregular';
 	font-size: 13px;
@@ -626,15 +631,14 @@ footer{
 .rights span{
 	text-decoration: underline;
 }
-footer .contact-list{
-	float: left;
-	overflow: hidden;
+.footer-contacts{
+	display: inline-block;
+	vertical-align: middle;
 }
 footer .contact-list li{
 	color: #000;
 }
 .contacts{
-	float: left;
 	margin-top: 10px;
 }
 .contacts li{
@@ -643,8 +647,9 @@ footer .contact-list li{
 	font-size: 13px;
 	margin-right: 34px;
 }
-.social{
-	float: left;
+.social-icons{
+	display: inline-block;
+	vertical-align: middle;
 }
 .social li{
 	display: inline-block;
